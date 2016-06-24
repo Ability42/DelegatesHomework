@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78996AFB1D1D15EC006F47F7 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78996AFA1D1D15EC006F47F7 /* Doctor.m */; };
+		78996AFE1D1D99AB006F47F7 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 78996AFD1D1D99AB006F47F7 /* Friend.m */; };
 		78B606B01D1C7A3B00ED9463 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606AF1D1C7A3B00ED9463 /* main.m */; };
 		78B606B31D1C7A3B00ED9463 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606B21D1C7A3B00ED9463 /* AppDelegate.m */; };
 		78B606B61D1C7A3B00ED9463 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606B51D1C7A3B00ED9463 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		78996AF91D1D15EC006F47F7 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
 		78996AFA1D1D15EC006F47F7 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		78996AFC1D1D99AB006F47F7 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friend.h; path = ../Friend.h; sourceTree = "<group>"; };
+		78996AFD1D1D99AB006F47F7 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Friend.m; path = ../Friend.m; sourceTree = "<group>"; };
 		78B606AB1D1C7A3B00ED9463 /* DelegatesHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegatesHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B606AF1D1C7A3B00ED9463 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78B606B11D1C7A3B00ED9463 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,10 +112,12 @@
 			children = (
 				78B606B11D1C7A3B00ED9463 /* AppDelegate.h */,
 				78B606B21D1C7A3B00ED9463 /* AppDelegate.m */,
-				78B606E11D1C7A4E00ED9463 /* Patient.h */,
-				78B606E21D1C7A4E00ED9463 /* Patient.m */,
 				78996AF91D1D15EC006F47F7 /* Doctor.h */,
 				78996AFA1D1D15EC006F47F7 /* Doctor.m */,
+				78996AFC1D1D99AB006F47F7 /* Friend.h */,
+				78996AFD1D1D99AB006F47F7 /* Friend.m */,
+				78B606E11D1C7A4E00ED9463 /* Patient.h */,
+				78B606E21D1C7A4E00ED9463 /* Patient.m */,
 				78B606B41D1C7A3B00ED9463 /* ViewController.h */,
 				78B606B51D1C7A3B00ED9463 /* ViewController.m */,
 				78B606B71D1C7A3B00ED9463 /* Main.storyboard */,
@@ -283,6 +288,7 @@
 				78B606B61D1C7A3B00ED9463 /* ViewController.m in Sources */,
 				78B606E31D1C7A4E00ED9463 /* Patient.m in Sources */,
 				78B606B31D1C7A3B00ED9463 /* AppDelegate.m in Sources */,
+				78996AFE1D1D99AB006F47F7 /* Friend.m in Sources */,
 				78B606B01D1C7A3B00ED9463 /* main.m in Sources */,
 				78996AFB1D1D15EC006F47F7 /* Doctor.m in Sources */,
 			);

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Patient.h"
 #import "Doctor.h"
+#import "Friend.h"
 
 @interface AppDelegate ()
 
@@ -45,14 +46,23 @@
     patient4.symptom = headAche;
     patient4.puls = 110.4f;
     
+    Friend* myFriend = [[Friend alloc] init];
+    Friend* myCoworker = [[Friend alloc] init];
+    Friend* myBoss = [[Friend alloc] init];
+    Friend* mySecretary = [[Friend alloc] init];
+    
+    
     Doctor* drEric = [[Doctor alloc] init];
     
     NSArray* patientHeap = [[NSArray alloc] initWithObjects:patient1, patient2, patient3, patient4, nil];
 
     
     for (id fellow in patientHeap) {
-
-        [fellow setDelegate:drEric];
+        if (arc4random() % 2) {
+            [fellow setDelegate:drEric];
+        } else {
+            [fellow setDelegate:myFriend];
+        }
         [fellow feelsWorse];
     }
     return YES;
