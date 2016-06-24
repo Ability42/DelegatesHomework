@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "Patient.h"
+#import "Doctor.h"
 
 @interface AppDelegate ()
+
+// @property (strong, nonatomic) NSArray* patientHeap;
 
 @end
 
@@ -16,7 +20,41 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    Patient* patient1 = [[Patient alloc] init];
+    patient1.name = @"Scott";
+    patient1.temperature = 36.6f;
+    patient1.symptom = headAche;
+    patient1.puls = 132.4f;
+    
+    Patient* patient2 = [[Patient alloc] init];
+    patient2.name = @"Tom";
+    patient2.temperature = 38.6f;
+    patient2.symptom = headAche;
+    patient2.puls = 90.4f;
+
+    Patient* patient3 = [[Patient alloc] init];
+    patient3.name = @"Saymon";
+    patient3.temperature = 40.4f;
+    patient3.symptom = headAche;
+    patient3.puls = 180.0f;
+
+    Patient* patient4 = [[Patient alloc] init];
+    patient4.name = @"Scally";
+    patient4.temperature = 35.7f;
+    patient4.symptom = headAche;
+    patient4.puls = 110.4f;
+    
+    Doctor* drEric = [[Doctor alloc] init];
+    
+    NSArray* patientHeap = [[NSArray alloc] initWithObjects:patient1, patient2, patient3, patient4, nil];
+
+    
+    for (id fellow in patientHeap) {
+
+        [fellow setDelegate:drEric];
+        [fellow feelsWorse];
+    }
     return YES;
 }
 

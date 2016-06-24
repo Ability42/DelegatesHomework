@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78996AFB1D1D15EC006F47F7 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78996AFA1D1D15EC006F47F7 /* Doctor.m */; };
 		78B606B01D1C7A3B00ED9463 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606AF1D1C7A3B00ED9463 /* main.m */; };
 		78B606B31D1C7A3B00ED9463 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606B21D1C7A3B00ED9463 /* AppDelegate.m */; };
 		78B606B61D1C7A3B00ED9463 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606B51D1C7A3B00ED9463 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		78B606BE1D1C7A3B00ED9463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B606BC1D1C7A3B00ED9463 /* LaunchScreen.storyboard */; };
 		78B606C91D1C7A3B00ED9463 /* DelegatesHomeworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606C81D1C7A3B00ED9463 /* DelegatesHomeworkTests.m */; };
 		78B606D41D1C7A3B00ED9463 /* DelegatesHomeworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606D31D1C7A3B00ED9463 /* DelegatesHomeworkUITests.m */; };
+		78B606E31D1C7A4E00ED9463 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B606E21D1C7A4E00ED9463 /* Patient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		78996AF91D1D15EC006F47F7 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		78996AFA1D1D15EC006F47F7 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		78B606AB1D1C7A3B00ED9463 /* DelegatesHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegatesHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B606AF1D1C7A3B00ED9463 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78B606B11D1C7A3B00ED9463 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		78B606CF1D1C7A3B00ED9463 /* DelegatesHomeworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatesHomeworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B606D31D1C7A3B00ED9463 /* DelegatesHomeworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesHomeworkUITests.m; sourceTree = "<group>"; };
 		78B606D51D1C7A3B00ED9463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B606E11D1C7A4E00ED9463 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		78B606E21D1C7A4E00ED9463 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 			children = (
 				78B606B11D1C7A3B00ED9463 /* AppDelegate.h */,
 				78B606B21D1C7A3B00ED9463 /* AppDelegate.m */,
+				78B606E11D1C7A4E00ED9463 /* Patient.h */,
+				78B606E21D1C7A4E00ED9463 /* Patient.m */,
+				78996AF91D1D15EC006F47F7 /* Doctor.h */,
+				78996AFA1D1D15EC006F47F7 /* Doctor.m */,
 				78B606B41D1C7A3B00ED9463 /* ViewController.h */,
 				78B606B51D1C7A3B00ED9463 /* ViewController.m */,
 				78B606B71D1C7A3B00ED9463 /* Main.storyboard */,
@@ -271,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B606B61D1C7A3B00ED9463 /* ViewController.m in Sources */,
+				78B606E31D1C7A4E00ED9463 /* Patient.m in Sources */,
 				78B606B31D1C7A3B00ED9463 /* AppDelegate.m in Sources */,
 				78B606B01D1C7A3B00ED9463 /* main.m in Sources */,
+				78996AFB1D1D15EC006F47F7 /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				78B606DA1D1C7A3B00ED9463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78B606DB1D1C7A3B00ED9463 /* Build configuration list for PBXNativeTarget "DelegatesHomeworkTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				78B606DD1D1C7A3B00ED9463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78B606DE1D1C7A3B00ED9463 /* Build configuration list for PBXNativeTarget "DelegatesHomeworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				78B606E01D1C7A3B00ED9463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
