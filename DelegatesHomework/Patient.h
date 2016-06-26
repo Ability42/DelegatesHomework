@@ -36,6 +36,7 @@ typedef enum {
 @protocol PatientDelegate <NSObject> // define protocol
 
 - (void) patientFeelsBad:(Patient *) patient;
+- (void) makeReport;
 
 
 @end

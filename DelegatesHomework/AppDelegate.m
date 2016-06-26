@@ -25,7 +25,7 @@
     Patient* patient1 = [[Patient alloc] init];
     patient1.name = @"Scott";
     patient1.temperature = 36.6f;
-    patient1.symptom = headAche;
+    patient1.symptom = legAche;
     patient1.puls = 132.4f;
     
     Patient* patient2 = [[Patient alloc] init];
@@ -37,34 +37,33 @@
     Patient* patient3 = [[Patient alloc] init];
     patient3.name = @"Saymon";
     patient3.temperature = 40.4f;
-    patient3.symptom = headAche;
+    patient3.symptom = stomachAche;
     patient3.puls = 180.0f;
 
     Patient* patient4 = [[Patient alloc] init];
     patient4.name = @"Scally";
     patient4.temperature = 35.7f;
-    patient4.symptom = headAche;
+    patient4.symptom = handAche;
     patient4.puls = 110.4f;
     
+/*
     Friend* myFriend = [[Friend alloc] init];
     Friend* myCoworker = [[Friend alloc] init];
     Friend* myBoss = [[Friend alloc] init];
     Friend* mySecretary = [[Friend alloc] init];
-    
+*/
     
     Doctor* drEric = [[Doctor alloc] init];
-    
-    NSArray* patientHeap = [[NSArray alloc] initWithObjects:patient1, patient2, patient3, patient4, nil];
+    NSArray* patients = [[NSArray alloc] initWithObjects:patient1, patient2, patient3, patient4, nil];
 
     
-    for (id fellow in patientHeap) {
-        if (arc4random() % 2) {
-            [fellow setDelegate:drEric];
-        } else {
-            [fellow setDelegate:myFriend];
-        }
-        [fellow feelsWorse];
+    for (Patient *patient in patients) {
+        [patient setDelegate:drEric];
+        [patient feelsWorse];
     }
+    
+    [drEric makeReport];
+    
     return YES;
 }
 

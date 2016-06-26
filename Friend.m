@@ -16,5 +16,10 @@
     NSLog(@"%@: I have a bad news for you", patient.name);
 }
 
+- (NSDictionary *) makeReport {
+    NSLog(@"I'm bad doctor, so i didn't make any report here");
+    return [[NSDictionary alloc] initWithObjectsAndKeys:@"lol", @"kek", nil];
+}
+
 
 @end

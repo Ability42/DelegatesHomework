@@ -13,5 +13,5 @@
 @protocol PatientDelegate;
 
 @interface Doctor : NSObject <PatientDelegate>
-
+@property (strong, nonatomic) NSMutableDictionary* reportContent;
 @end
