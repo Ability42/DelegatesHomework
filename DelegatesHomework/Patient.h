@@ -14,16 +14,26 @@ typedef enum {
     legAche,
     handAche
 }SPAche;
+
+typedef enum{
+    oneStar,
+    twoStar,
+    threeStar,
+    fourStar,
+    fiveStar
+}SPEstimate;
+
 @protocol PatientDelegate; // define protocol
 
 @interface Patient : NSObject
 
 @property (strong, nonatomic) NSString* name;
-
+@property (assign, nonatomic) SPEstimate estimate;
+@property (assign, nonatomic) BOOL satisfied;
 
 @property (assign, nonatomic) float temperature;
 @property (assign,nonatomic) float puls;
-// Patients ache
+
 @property (assign, nonatomic) SPAche symptom;
 @property (weak, nonatomic) id <PatientDelegate> delegate;
 

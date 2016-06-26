@@ -46,8 +46,9 @@
     patient4.symptom = handAche;
     patient4.puls = 110.4f;
     
-/*
+
     Friend* myFriend = [[Friend alloc] init];
+/*
     Friend* myCoworker = [[Friend alloc] init];
     Friend* myBoss = [[Friend alloc] init];
     Friend* mySecretary = [[Friend alloc] init];
@@ -60,10 +61,26 @@
     for (Patient *patient in patients) {
         [patient setDelegate:drEric];
         [patient feelsWorse];
+        if (arc4random() % 2) {
+            patient.satisfied = YES;
+        }
     }
     
     [drEric makeReport];
     
+    // assign a new doctor if patient aren't satisfied by treatment
+    for (id person in patients) {
+        Patient* patient =(Patient*)person;
+        if (!patient.satisfied) {
+            patient.delegate = myFriend;
+        }
+    }
+    
+    // a new day in hospital
+    NSLog(@"New day in hospital\n");
+    for (Patient *patient in patients) {
+        [patient feelsWorse];
+    }
     return YES;
 }
 

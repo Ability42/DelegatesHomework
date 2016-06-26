@@ -10,6 +10,15 @@
 
 @implementation Patient;
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.satisfied = NO;
+    }
+    return self;
+}
+
 - (void) takePill {
     NSLog(@"%@ take a pill", self.name);
 }
